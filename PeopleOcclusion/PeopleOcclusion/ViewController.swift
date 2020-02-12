@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         cancellable = ModelEntity.loadModelAsync(named: "tv").sink(receiveCompletion: { (error) in
             print("Loading AR TV model - \(error) ")
-        }) { [unowned self](entity) in
+        }) { [unowned self](entity) in 
             anchor.children.append(entity)
             entity.scale = [1, 1, 1] * 0.006
 
@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         guard let config = arView.session.configuration as? ARWorldTrackingConfiguration else {
             return
         }
+        
         
         switch config.frameSemantics {
         case .personSegmentationWithDepth:
