@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oQZ-1R-R6W">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ai4-3a-HFt">
+            <objects>
+                <viewController id="oQZ-1R-R6W" customClass="ViewController" customModule="PeopleOcclusion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W8V-31-PXl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3V-sM-pdr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <gestureRecognizers/>
+                            </arView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDd-2C-HEM">
+                                <rect key="frame" x="20" y="809" width="374" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="peopleOcclusionButtonAction:" destination="oQZ-1R-R6W" eventType="touchUpInside" id="Xfo-Jf-XOa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="K3V-sM-pdr" firstAttribute="top" secondItem="k87-fl-Y29" secondAttribute="top" id="3zQ-0j-EnI"/>
+                            <constraint firstItem="K3V-sM-pdr" firstAttribute="leading" secondItem="k87-fl-Y29" secondAttribute="leading" id="JNd-li-Wp7"/>
+                            <constraint firstItem="tDd-2C-HEM" firstAttribute="leading" secondItem="k87-fl-Y29" secondAttribute="leading" constant="20" id="JXe-Tc-uHH"/>
+                            <constraint firstItem="k87-fl-Y29" firstAttribute="bottom" secondItem="tDd-2C-HEM" secondAttribute="bottom" constant="20" id="Lwy-qc-mDE"/>
+                            <constraint firstItem="k87-fl-Y29" firstAttribute="bottom" secondItem="K3V-sM-pdr" secondAttribute="bottom" id="aG0-hv-sQy"/>
+                            <constraint firstItem="k87-fl-Y29" firstAttribute="trailing" secondItem="K3V-sM-pdr" secondAttribute="trailing" id="bhE-TJ-yJq"/>
+                            <constraint firstItem="k87-fl-Y29" firstAttribute="trailing" secondItem="tDd-2C-HEM" secondAttribute="trailing" constant="20" id="xMg-Pt-kuW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k87-fl-Y29"/>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="K3V-sM-pdr" id="5yY-bk-ici"/>
+                        <outlet property="peopleOcclusionToggleButton" destination="tDd-2C-HEM" id="4B7-Ft-myV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NcS-AL-OqZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="-102"/>
+        </scene>
+    </scenes>
+</document>
