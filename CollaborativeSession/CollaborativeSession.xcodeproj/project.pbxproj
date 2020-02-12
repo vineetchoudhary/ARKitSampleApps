@@ -42,7 +42,7 @@
 		448E678823F3FE3600722C70 = {
 			isa = PBXGroup;
 			children = (
-				448E679323F3FE3600722C70 /* CoolaborativeSession */,
+				448E679323F3FE3600722C70 /* CollaborativeSession */,
 				448E679223F3FE3600722C70 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		448E679323F3FE3600722C70 /* CoolaborativeSession */ = {
+		448E679323F3FE3600722C70 /* CollaborativeSession */ = {
 			isa = PBXGroup;
 			children = (
 				448E67AC23F4108900722C70 /* tv.usdz */,
@@ -67,7 +67,7 @@
 				448E679F23F3FE3A00722C70 /* LaunchScreen.storyboard */,
 				448E67A223F3FE3A00722C70 /* Info.plist */,
 			);
-			path = CoolaborativeSession;
+			path = CollaborativeSession;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
