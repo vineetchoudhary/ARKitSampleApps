@@ -44,7 +44,6 @@ class ViewController: UIViewController {
             return
         }
         
-        
         switch config.frameSemantics {
         case .personSegmentationWithDepth:
             config.frameSemantics.remove(.personSegmentationWithDepth)
